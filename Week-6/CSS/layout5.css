@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit";
+    background-color: #F5DEB3; 
+}
+
+.flex-container {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+}
+
+.flex-item img {
+    width: 50%; 
+    height: 100vh;
+    float: right;
+   
+}
+
+.flex-item h1{
+    padding-top: 50px;
+    padding-bottom: 90px;
+    font-size: 65px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    text-indent: 50px;
+}
+
+.text h2,h3,h4 {
+    text-indent: 50px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.text h4{
+    padding-bottom: 50px;
+}
+
+.text h5,h6,p{
+    text-indent: 50px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+button{
+    background-color:darkgreen;
+    color: white;
+    border:none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 50px;
+    padding:10px 30px 10px 30px;
+    font-size:15px;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .flex-container{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 785px) {
+    .flex-container{
+        align-items: center;
+    }
+
+    .flex-item img{
+        width:100%;
+    } 
+    
+        .flex-item h1, .text{
+            width:100%;
+        }
+    }
